@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Assignment 1 - Pure Functions</title>
+</head>
+
+<body>
+    <script>
+        function counterReducer(actionType, counter) {
+            if (actionType === "INC") {
+                counter++;
+                return counter;
+            } else if (actionType === "DEC") {
+                counter--;
+                return counter;
+            }
+        }
+        console.log(counterReducer("INC", 10));
+        console.log(counterReducer("DEC", 10));
+    </script>
+</body>
+
+</html>
